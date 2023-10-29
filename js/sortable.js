@@ -3,6 +3,7 @@
 import { isMobile } from "./devices.js"
 import { toDo } from "./script.js"
 
+// mobile device check
 if (!isMobile.any()) {
 	// init sortable
 	const sortable = Sortable.create(toDo.listTasksElement, {

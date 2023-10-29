@@ -1,5 +1,7 @@
 'use strict'
 
+import { isMobile } from "./devices.js"
+
 export const toDo = {
 	// variables
 	navigationElement: document.querySelector('.navigation'),
@@ -76,7 +78,8 @@ export const toDo = {
 		const isPopupVisible = this.popupElement.classList.contains('_show')
 
 		if (isPopupVisible) {
-			document.addEventListener('keyup', this.handleKeyupClick)
+			if (!isMobile.any()) document.addEventListener('keyup', this.handleKeyupClick)
+
 			this.addTaskButton.addEventListener('click', this.handleAddTaskButtonClick)
 			this.clearInputButton.addEventListener('click', this.clearInputValue)
 
