@@ -95,7 +95,7 @@ export const toDo = {
 	clearInputValue() {
 		const { inputElement } = toDo
 
-		inputElement.value = null
+		inputElement.value = ''
 		return inputElement.focus()
 	},
 
@@ -182,7 +182,7 @@ export const toDo = {
 		const { tasks } = toDo,
 			{ value } = toDo.inputElement
 
-		if (!value.trim()) return
+		if (!value.trim() || value.trim().length === 0) return
 
 		toDo.createTask(value, tasks.length)
 		toDo.checkAndShowCompletedTasks()
