@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style: none;
+}
+
+input {
+	outline: none;
+}
+
+button {
+	background-color: transparent;
+	cursor: pointer;
+}
+
+body {
+	font-family: var(--font-family);
+	font-size: var(--font-size);
+	background: linear-gradient(to right, var(--background-gradient));
+}

@@ -1,0 +1,56 @@
+:root {
+	--font-family: "Playpen Sans", cursive;
+	--font-size: 14px;
+
+	--transition-duration: 0.4s;
+
+	/* colors */
+	--background-gradient: #fdc2c2, #9a71c8;
+	--to-do-background: #fff;
+
+	--accent-color: #967ab8;
+
+	--to-do-button-background: #ffbb78;
+	--to-do-button-color: #fff;
+
+	--to-do-navigation-button-background: #fef7f7;
+	--to-do-navigation-button-border-color: #f0f0f0;
+	--to-do-navigation-button-icon-color: #c7c7c7;
+	--to-do-navigation-button-icon-active-color: var(--accent-color);
+
+	--to-do-list-button-background: #f0f0f0;
+	--to-do-list-button-checkbox-border-color: #000;
+	--to-do-list-button-active-color: var(--accent-color);
+
+	--to-do-popup-background: #fff;
+	--to-do-popup-input-border-color: #000;
+	--to-do-popup-button-color: #fff;
+
+	/* to do settings */
+	--to-do-width: 350px;
+	--to-do-height: 450px;
+	--to-do-radius: 10px;
+
+	--to-do-button-size: 60px;
+	--to-do-button-radius: 50%;
+
+	/* navigation settings */
+	--to-do-navigation-button-height: 60px;
+	--to-do-navigation-button-border: 1px;
+	--to-do-navigation-button-icon-size: 28px;
+
+	/* list settings */
+	--to-do-list-padding: 30px;
+	--to-do-list-gap: 10px;
+	--to-do-list-button-padding: 10px;
+	--to-do-list-button-checkbox-size: 15px;
+	--to-do-list-button-checkbox-border: 1px;
+	--to-do-list-button-checkbox-radius: 50%;
+	--to-do-list-button-delete-size: 20px;
+	--to-do-list-button-active-opacity: 0.5;
+
+	/* popup settings */
+	--to-do-popup-elements-height: 35px;
+	--to-do-popup-elements-padding: 10px;
+	--to-do-popup-input-border: 1px;
+}

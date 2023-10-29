@@ -1,0 +1,56 @@
+.popup {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: var(--to-do-list-padding);
+	padding-bottom: calc(var(--to-do-button-size));
+	border-radius: var(--to-do-radius);
+	background-color: var(--to-do-popup-background);
+	opacity: 0;
+	visibility: hidden;
+}
+
+.popup._show {
+	opacity: 1;
+	visibility: visible;
+}
+
+.popup > *:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.popup__input,
+.popup__button {
+	min-height: var(--to-do-popup-elements-height);
+	width: 100%;
+}
+
+.popup__input {
+	font-family: inherit;
+	border-bottom: var(--to-do-popup-input-border) solid var(--to-do-popup-input-border-color);
+	transition: padding var(--transition-duration);
+}
+
+.popup__input:focus {
+	padding: 0 var(--to-do-popup-elements-padding);
+}
+
+.popup__buttons {
+	display: flex;
+	gap: 15px;
+}
+
+.popup__button {
+	font-family: inherit;
+	padding: var(--to-do-popup-elements-padding);
+	border-radius: var(--to-do-radius);
+	background-color: var(--accent-color);
+	color: var(--to-do-popup-button-color);
+}
+
+.popup__button_transparent {
+	border: var(--to-do-popup-input-border) solid var(--to-do-popup-input-border-color);
+	background-color: transparent;
+	color: inherit;
+}
