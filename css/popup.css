@@ -17,7 +17,7 @@
 }
 
 .popup > *:not(:last-child) {
-	margin-bottom: 15px;
+	margin-bottom: var(--to-do-popup-elements-margin);
 }
 
 .popup__input,
@@ -38,7 +38,7 @@
 
 .popup__buttons {
 	display: flex;
-	gap: 15px;
+	gap: var(--to-do-popup-elements-margin);
 }
 
 .popup__button {

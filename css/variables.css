@@ -34,6 +34,8 @@
 	--to-do-button-size: 60px;
 	--to-do-button-radius: 50%;
 
+	--to-do-scrollbar: 6.5px;
+
 	/* navigation settings */
 	--to-do-navigation-button-height: 60px;
 	--to-do-navigation-button-border: 1px;
@@ -52,5 +54,6 @@
 	/* popup settings */
 	--to-do-popup-elements-height: 35px;
 	--to-do-popup-elements-padding: 10px;
+	--to-do-popup-elements-margin: 15px;
 	--to-do-popup-input-border: 1px;
 }

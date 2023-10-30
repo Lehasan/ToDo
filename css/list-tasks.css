@@ -85,3 +85,15 @@
 	font-size: var(--to-do-list-button-delete-size);
 	transform: rotate(45deg);
 }
+
+@media (any-hover: hover) {
+	.list-tasks::-webkit-scrollbar {
+		width: var(--to-do-scrollbar);
+	}
+
+	.list-tasks::-webkit-scrollbar-thumb {
+		border: 2px solid var(--to-do-background);
+		border-radius: var(--to-do-radius);
+		background-color: var(--accent-color);
+	}
+}
